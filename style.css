@@ -1,0 +1,238 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f7f8fc;
+}
+
+a {
+    text-decoration: none;
+    color: #00bfa6;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar a {
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.menu-icons {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icons i {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 70px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 25px;
+    color: #00bfa6;
+}
+
+.home-content h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.home-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.home-content .btn {
+    padding: 10px 20px;
+    background: #00bfa6;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background 0.3s;
+}
+
+.home-content .btn:hover {
+    background: #009e8c;
+}
+
+.home-img img {
+    width: 600px;
+}
+
+section {
+    padding: 80px 50px;
+}
+
+.about {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about, .projects, .experience, .skills, .certificates, .contact {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-col-1 img {
+    width: 500px;
+}
+
+.about-col-2 {
+    max-width: 800px;
+}
+
+.about-col-2 p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+
+
+.projects .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-box {
+    width: 45%;
+    background: #f7f8fc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+}
+
+.project-box img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.project-layer {
+    margin-top: 20px;
+}
+
+.experience .experience-box, .skills .skill-container, .certificates .certificate {
+    margin-bottom: 30px;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+
+.skill-box {
+    width: 18%;
+    text-align: center;
+    background: #f7f8fc;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-box img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact .input-box {
+    flex: 1;
+}
+
+.contact .input-box input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact .btn {
+    padding: 10px 20px;
+    background: #00bfa6;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.contact .btn:hover {
+    background: #009e8c;
+}
+
+.footer {
+    padding: 20px 50px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-iconTop a {
+    color: #00bfa6;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer-iconTop a:hover {
+    color: #009e8c;
+}
