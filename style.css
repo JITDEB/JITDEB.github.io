@@ -236,3 +236,17 @@ section {
 .footer-iconTop a:hover {
     color: #009e8c;
 }
+/* Mobile devices */
+@media (max-width: 600px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .about-col-1,
+    .about-col-2 {
+      width: 100%;
+      float: none;
+      margin-bottom: 20px;
+    }
+  }
