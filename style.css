@@ -41,8 +41,19 @@ h1, h2, h3, h4 {
     font-size: 20px;
 }
 
-.menu-icons {
+.nav-links {
     display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.menu-icons {
+    display: none;
     align-items: center;
 }
 
@@ -95,13 +106,15 @@ h1, h2, h3, h4 {
 }
 
 .home-img img {
-    width: 100%;
-    max-width: 600px;
-
+    width: 600px;
 }
 
 section {
     padding: 80px 50px;
+}
+.section {
+    padding: 40px;
+    text-align: center;
 }
 
 .about {
@@ -119,14 +132,12 @@ section {
     background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    padding: 20px;
 }
 
 .about .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
 }
 
 .about-col-1 img {
@@ -150,8 +161,21 @@ section {
     gap: 20px;
 }
 
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .project-box {
-    flex: 1 1 45%;
+    width: 100%;
+    max-width: 45%;
     background: #f7f8fc;
     padding: 20px;
     border-radius: 10px;
@@ -165,7 +189,7 @@ section {
 
 .project-box img {
     width: 100%;
-    max-width: 300px;
+    max-width: 150px;
     border-radius: 10px;
 }
 
@@ -184,7 +208,8 @@ section {
 }
 
 .skill-box {
-    flex: 1 1 18%;
+    width: 100%;
+    max-width: 18%;
     text-align: center;
     background: #f7f8fc;
     padding: 15px;
@@ -243,12 +268,49 @@ section {
     color: #009e8c;
 }
 
+* Mobile styles */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav-links {
+        flex-direction: row;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .nav-links {
+        display: flex;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px;
     }
 
     .navbar {
@@ -268,26 +330,21 @@ section {
 
     .home-img img {
         width: 100%;
-        
+        max-width: 300px;
     }
 
     .about .row, .projects .project-container, .experience, .skills .skill-container, .certificates {
         flex-direction: column;
-        padding: 20px;
+        align-items: center;
     }
 
     .project-box {
-    flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
     }
 
     .skill-box {
         flex: 1 1 100%;
-    }
-    .contact form {
-        flex-direction: column;
-    }
-    .footer {
-        padding: 20px;
     }
 
     .menu-icons {
