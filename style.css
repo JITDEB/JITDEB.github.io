@@ -31,13 +31,18 @@ h1, h2, h3, h4 {
     color: #333;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
 .navbar a {
     margin: 0 20px;
     font-size: 20px;
 }
 
 .menu-icons {
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -121,7 +126,8 @@ section {
 }
 
 .about-col-1 img {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .about-col-2 {
@@ -134,8 +140,6 @@ section {
     margin: 20px 0;
 }
 
-
-
 .projects .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -143,7 +147,8 @@ section {
 }
 
 .project-box {
-    width: 45%;
+    width: 100%;
+    max-width: 45%;
     background: #f7f8fc;
     padding: 20px;
     border-radius: 10px;
@@ -156,7 +161,8 @@ section {
 }
 
 .project-box img {
-    width: 30%;
+    width: 100%;
+    max-width: 150px;
     border-radius: 10px;
 }
 
@@ -174,11 +180,9 @@ section {
     gap: 20px;
 }
 
-
-
-
 .skill-box {
-    width: 18%;
+    width: 100%;
+    max-width: 18%;
     text-align: center;
     background: #f7f8fc;
     padding: 15px;
@@ -236,6 +240,7 @@ section {
 .footer-iconTop a:hover {
     color: #009e8c;
 }
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     .header {
@@ -258,8 +263,65 @@ section {
         margin-bottom: 20px;
     }
 
+    .home-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
     .about .row, .projects .project-container, .experience, .skills .skill-container, .certificates {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .skill-box {
+        flex: 1 1 100%;
+    }
+
+    .menu-icons {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menu-icons #menu-icon {
+        display: block;
+    }
+
+    .menu-icons #menu-icon.active + .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .home {
+        padding: 70px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .about .row, .projects .project-container, .experience, .skills .skill-container, .certificates {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box {
+        width: 100%;
+        max-width: 100%;
     }
 
     .skill-box {
