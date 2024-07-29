@@ -42,7 +42,7 @@ h1, h2, h3, h4 {
 }
 
 .menu-icons {
-    display: none;
+    display: flex;
     align-items: center;
 }
 
@@ -95,7 +95,9 @@ h1, h2, h3, h4 {
 }
 
 .home-img img {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+
 }
 
 section {
@@ -117,12 +119,14 @@ section {
     background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .about .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .about-col-1 img {
@@ -147,8 +151,7 @@ section {
 }
 
 .project-box {
-    width: 100%;
-    max-width: 45%;
+    flex: 1 1 45%;
     background: #f7f8fc;
     padding: 20px;
     border-radius: 10px;
@@ -162,7 +165,7 @@ section {
 
 .project-box img {
     width: 100%;
-    max-width: 150px;
+    max-width: 300px;
     border-radius: 10px;
 }
 
@@ -181,8 +184,7 @@ section {
 }
 
 .skill-box {
-    width: 100%;
-    max-width: 18%;
+    flex: 1 1 18%;
     text-align: center;
     background: #f7f8fc;
     padding: 15px;
@@ -242,10 +244,11 @@ section {
 }
 
 /* Mobile Styles */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
+        padding: 20px;
     }
 
     .navbar {
@@ -265,21 +268,26 @@ section {
 
     .home-img img {
         width: 100%;
-        max-width: 300px;
+        
     }
 
     .about .row, .projects .project-container, .experience, .skills .skill-container, .certificates {
         flex-direction: column;
-        align-items: center;
+        padding: 20px;
     }
 
     .project-box {
-        width: 100%;
-        max-width: 100%;
+    flex: 1 1 100%;
     }
 
     .skill-box {
         flex: 1 1 100%;
+    }
+    .contact form {
+        flex-direction: column;
+    }
+    .footer {
+        padding: 20px;
     }
 
     .menu-icons {
