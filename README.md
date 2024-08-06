@@ -10,11 +10,9 @@
 
 - **Contact Form**: An integrated contact form allowing visitors to easily get in touch with you for inquiries or feedback.
 
-- **Skills and Technologies**: Highlight your skills and the technologies you are proficient in, such as programming languages, tools, and frameworks.
+- **Skills and Technologies**: HTML, CSS, JavaScript
 
-- **Blog/Articles**: (Optional) If applicable, include a blog or articles section to share insights, tutorials, or updates related to your field.
 
-- **Client Testimonials**: (Optional) Display testimonials or reviews from clients or collaborators to build credibility and showcase positive feedback.
 
 - **Download Resume**: A button or link to download your resume for potential employers or collaborators.
 
