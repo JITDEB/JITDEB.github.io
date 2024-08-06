@@ -25,6 +25,7 @@ Here is a screenshot of the portfolio:
 ![Portfolio Screenshot](https://github.com/JITDEB/Portfolio_JITDEB/blob/main/Screenshot%202024-08-07%20021246.jpg)
 ![Portfolio Screenshot](https://github.com/JITDEB/Portfolio_JITDEB/blob/main/Screenshot%202024-08-07%20022425.jpg)
 ![Portfolio Screenshot](https://github.com/JITDEB/Portfolio_JITDEB/blob/main/Screenshot%202024-08-07%20022601.jpg)
+![Portfolio Screenshot](https://github.com/JITDEB/Portfolio_JITDEB/blob/main/Screenshot%202024-08-07%20022623.jpg)
 
 
 ## Getting Started
