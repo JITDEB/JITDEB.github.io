@@ -1,7 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     background: #f7f8fc;
@@ -12,7 +11,10 @@ a {
     color: #00bfa6;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
 }
 
@@ -113,7 +115,12 @@ section {
     gap: 20px;
 }
 
-.about, .projects, .experience, .skills, .certificates, .contact {
+.about,
+.projects,
+.experience,
+.skills,
+.certificates,
+.contact {
     background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -170,7 +177,9 @@ section {
     margin-top: 20px;
 }
 
-.experience .experience-box, .skills .skill-container, .certificates .certificate {
+.experience .experience-box,
+.skills .skill-container,
+.certificates .certificate {
     margin-bottom: 30px;
 }
 
@@ -205,7 +214,8 @@ section {
     flex: 1;
 }
 
-.contact .input-box input, .contact textarea {
+.contact .input-box input,
+.contact textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -242,7 +252,7 @@ section {
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 471px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -250,7 +260,7 @@ section {
 
     .navbar {
         flex-direction: column;
-        gap: 10px;
+        gap: 1.5rem;
     }
 
     .home {
@@ -268,7 +278,11 @@ section {
         max-width: 300px;
     }
 
-    .about .row, .projects .project-container, .experience, .skills .skill-container, .certificates {
+    .about .row,
+    .projects .project-container,
+    .experience,
+    .skills .skill-container,
+    .certificates {
         flex-direction: column;
         align-items: center;
     }
@@ -294,7 +308,7 @@ section {
         display: block;
     }
 
-    .menu-icons #menu-icon.active + .navbar {
+    .menu-icons #menu-icon.active+.navbar {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -314,7 +328,11 @@ section {
         max-width: 400px;
     }
 
-    .about .row, .projects .project-container, .experience, .skills .skill-container, .certificates {
+    .about .row,
+    .projects .project-container,
+    .experience,
+    .skills .skill-container,
+    .certificates {
         flex-direction: column;
         align-items: center;
     }
